@@ -1,6 +1,6 @@
 <h1 align="center">🎯 Track Description Annotator</h1>
 
-<p align="center"><strong>Official download repository for Track Description Annotator releases.</strong></p>
+<p align="center"><strong>A cross-platform desktop tool for text annotation on multi-object tracking data.</strong></p>
 
 <p align="center">
   <img src="./docs/images/deep-light-mode.png" alt="Track Description Annotator dark and light mode preview" width="100%" />
@@ -19,7 +19,7 @@ Track Description Annotator is designed for video multi-object tracking workflow
 
 - Download releases: [GitHub Releases](https://github.com/sky-creater/Track-Description-Annotator-app/releases)
 - Platforms: Windows / macOS / Linux
-- This repository is the official binary distribution channel. It does not publish source code.
+- Binary releases are published on this repository's Releases page.
 
 ---
 
@@ -130,6 +130,27 @@ Example output:
 ```jsonl
 {"seq":"MOT17-02","image_name":"000001.jpg","frame_index":1,"stride":1,"object":{"track_id":7,"category_name":"person","bbox_xyxy":[100,80,220,360],"description":{"appearance":"A person in a dark jacket.","location":"Walking near the center of the frame.","event":"Moving forward.","relations":{"environment":"Outdoor street scene.","relation_with_hint":{"related_track_id":12,"related_category_name":"person","related_bbox_xyxy":[260,90,360,355],"relation_type":"next_to","relation_description":"Walking beside another person."}}},"uncertainty":[]}}
 ```
+
+---
+
+## 🎬 Demo
+
+Demo dataset download:
+
+- Baidu Netdisk: [demo_dataset.zip](https://pan.baidu.com/s/19WOQ7pt966q4r1UTrtp4dg?pwd=tpwd)
+- Extraction code: `tpwd`
+
+Demo steps:
+
+1. Click `Select Label Folder` and choose the label folder:
+   `yourpath/demo_dataset/label/LaSOT`
+2. Click `Images Linked` and choose the image folder:
+   `yourpath/demo_dataset/Image/LaSOT`
+
+Note:
+
+- If the wrong folders are selected, the software may become unresponsive.
+- If that happens, restart the application and load the correct folders again.
 
 ---
 
